@@ -1,0 +1,734 @@
+# depslib dependency file v1.0
+1435638903 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/main.c
+	"headFile.h"
+	"globalVariable.h"
+
+1435689494 /media/A/XC/compound_eye/0622_2015Publication/reconstruction/headFile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<math.h>
+	<time.h>
+	"system.h"
+	"./lib/cblas.h"
+
+1435512008 /media/A/XC/compound_eye/0622_2015Publication/reconstruction/system.h
+
+1435292522 /media/A/XC/compound_eye/0622_2015Publication/reconstruction/lib/cblas.h
+	<stddef.h>
+
+1435611325 /media/A/XC/compound_eye/0622_2015Publication/reconstruction/globalVariable.h
+
+1435464185 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/projInit.c
+	"headFile.h"
+
+1435292522 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/checkFile.c
+	"headFile.h"
+
+1435464173 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/loadProjection.c
+	"headFile.h"
+
+1435464209 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/subProjInit.c
+	"headFile.h"
+
+1435463916 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/loadDetPixMaskForRecon.c
+	"headFile.h"
+
+1435611158 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/imgInit.c
+	"headFile.h"
+
+1435518300 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/loadSRF.c
+	"headFile.h"
+
+1435508934 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/souMaskInit.c
+	"headFile.h"
+
+1435518824 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/srfread1.c
+	"headFile.h"
+
+1435513185 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/srfread2.c
+	"headFile.h"
+
+1435533960 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/loadReconFile.c
+	"headFile.h"
+
+1435534495 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/seqInit_ForRecon.c
+	"headFile.h"
+
+1435548112 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/subSeqInit_ForRecon.c
+	"headFile.h"
+
+1435548059 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/senInit_ForRecon.c
+	"headFile.h"
+
+1435610626 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/A_multiply_x.c
+	"headFile.h"
+
+1435619420 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/Recon_Cal.c
+	"headFile.h"
+	"globalVariable.h"
+
+1435607612 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/TranA_multiply_x.c
+	"headFile.h"
+
+1435511174 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/srfread2.cpp
+	"structureSettings.h"
+	"functionsList.h"
+	"constants.h"
+
+1435619324 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/reconUpdate.c
+	"headFile.h"
+	"globalVariable.h"
+
+1435689450 source:/media/A/XC/compound_eye/0622_2015Publication/reconstruction/projGeneration.c
+	"headFile.h"
+	"globalVariable.h"
+
+1435610626 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/A_multiply_x.c
+	"headFile.h"
+
+1438212522 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/headFile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<math.h>
+	<unistd.h>
+	<time.h>
+	"./system.h"
+	"./lib/cblas.h"
+
+1438064256 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/system.h
+
+1435292522 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/lib/cblas.h
+	<stddef.h>
+
+1435292522 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/checkFile.c
+	"headFile.h"
+
+1437439538 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/imgInit.c
+	"headFile.h"
+
+1435463916 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/loadDetPixMaskForRecon.c
+	"headFile.h"
+
+1438064681 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/loadProjection.c
+	"headFile.h"
+
+1437679651 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/loadReconFile.c
+	"headFile.h"
+
+1435518300 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/loadSRF.c
+	"headFile.h"
+
+1438219767 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/main.c
+	"headFile.h"
+	"globalVariable.h"
+
+1438149986 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/globalVariable.h
+
+1438065617 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/projInit.c
+	"headFile.h"
+
+1437526988 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/Recon_Cal.c
+	"headFile.h"
+	"globalVariable.h"
+
+1438219803 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/reconUpdate.c
+	"headFile.h"
+	"globalVariable.h"
+
+1435548059 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/senInit_ForRecon.c
+	"headFile.h"
+
+1435534495 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/seqInit_ForRecon.c
+	"headFile.h"
+
+1435508934 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/souMaskInit.c
+	"headFile.h"
+
+1435518824 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/srfread1.c
+	"headFile.h"
+
+1435464209 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/subProjInit.c
+	"headFile.h"
+
+1437439631 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/subSeqInit_ForRecon.c
+	"headFile.h"
+
+1435607612 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/TranA_multiply_x.c
+	"headFile.h"
+
+1438219064 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/projGeneration.c
+	"headFile.h"
+	"globalVariable.h"
+
+1023122964 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/nr/nrutil.h
+
+1438153302 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/initRandSeed.c
+	"headFile.h"
+
+1018233480 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/nr/nr.h
+	<stdio.h>
+
+1437967301 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/poidev.c
+	<math.h>
+
+1437967439 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/ran1.c
+
+1437969800 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/reconstruction/gammln.c
+	<math.h>
+
+1435610626 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/A_multiply_x.c
+	"headFile.h"
+
+1439336070 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/headFile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<math.h>
+	<unistd.h>
+	<time.h>
+	"./system.h"
+	"./lib/cblas.h"
+
+1438972952 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/system.h
+
+1435292522 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/lib/cblas.h
+	<stddef.h>
+
+1435292522 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/checkFile.c
+	"headFile.h"
+
+1437969800 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/gammln.c
+	<math.h>
+
+1438993320 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/genNOiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1438988098 /media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/globalVariable.h
+
+1437439538 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/imgInit.c
+	"headFile.h"
+
+1438153302 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/initRandSeed.c
+	"headFile.h"
+
+1435463916 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/loadDetPixMaskForRecon.c
+	"headFile.h"
+
+1438064681 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/loadProjection.c
+	"headFile.h"
+
+1437679651 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/loadReconFile.c
+	"headFile.h"
+
+1435518300 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/loadSRF.c
+	"headFile.h"
+
+1437967301 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/poidev.c
+	<math.h>
+
+1438988632 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/projGeneration.c
+	"headFile.h"
+	"globalVariable.h"
+
+1438065617 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/projInit.c
+	"headFile.h"
+
+1437967439 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/ran1.c
+
+1437526988 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/Recon_Cal.c
+	"headFile.h"
+	"globalVariable.h"
+
+1438993298 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/reconUpdate.c
+	"headFile.h"
+	"globalVariable.h"
+
+1438979128 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/resetImag.c
+	"headFile.h"
+
+1438976970 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/resetSeq.c
+	"headFile.h"
+
+1438992850 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/senInit_ForRecon.c
+	"headFile.h"
+
+1438973958 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/seqInit_ForRecon.c
+	"headFile.h"
+
+1435508934 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/souMaskInit.c
+	"headFile.h"
+
+1435518824 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/srfread1.c
+	"headFile.h"
+
+1435464209 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/subProjInit.c
+	"headFile.h"
+
+1438973970 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/subSeqInit_ForRecon.c
+	"headFile.h"
+
+1438993512 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/threadHandle.c
+	"headFile.h"
+	"globalVariable.h"
+
+1435607612 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/TranA_multiply_x.c
+	"headFile.h"
+
+1439336440 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/loadNoiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439335947 source:/media/PET RAID 1/XC/compound_eye/0622_2015Publication/code/reconstruction/main.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353119 source:/media/B/XC/0622_2015Publication/code/reconstruction/A_multiply_x.c
+	"headFile.h"
+
+1439353120 /media/B/XC/0622_2015Publication/code/reconstruction/headFile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<math.h>
+	<unistd.h>
+	<time.h>
+	"./system.h"
+	"./lib/cblas.h"
+
+1439353120 /media/B/XC/0622_2015Publication/code/reconstruction/system.h
+
+1439353120 /media/B/XC/0622_2015Publication/code/reconstruction/lib/cblas.h
+	<stddef.h>
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/checkFile.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/gammln.c
+	<math.h>
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/genNOiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353120 /media/B/XC/0622_2015Publication/code/reconstruction/globalVariable.h
+
+1439353119 source:/media/B/XC/0622_2015Publication/code/reconstruction/imgInit.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/initRandSeed.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/loadDetPixMaskForRecon.c
+	"headFile.h"
+
+1439353119 source:/media/B/XC/0622_2015Publication/code/reconstruction/loadNoiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/loadProjection.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/loadReconFile.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/loadSRF.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/main.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353119 source:/media/B/XC/0622_2015Publication/code/reconstruction/poidev.c
+	<math.h>
+
+1439353119 source:/media/B/XC/0622_2015Publication/code/reconstruction/projGeneration.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/projInit.c
+	"headFile.h"
+
+1439353119 source:/media/B/XC/0622_2015Publication/code/reconstruction/ran1.c
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/Recon_Cal.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/reconUpdate.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/resetImag.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/resetSeq.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/senInit_ForRecon.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/seqInit_ForRecon.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/souMaskInit.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/srfread1.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/subProjInit.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/subSeqInit_ForRecon.c
+	"headFile.h"
+
+1439353120 source:/media/B/XC/0622_2015Publication/code/reconstruction/threadHandle.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439353119 source:/media/B/XC/0622_2015Publication/code/reconstruction/TranA_multiply_x.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/A_multiply_x.c
+	"headFile.h"
+
+1439438842 /media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/headFile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<math.h>
+	<unistd.h>
+	<time.h>
+	"./system.h"
+	"./lib/cblas.h"
+
+1439438842 /media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/system.h
+
+1439438842 /media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/lib/cblas.h
+	<stddef.h>
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/addPulse2Proj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 /media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/globalVariable.h
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/checkFile.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/gammln.c
+	<math.h>
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/genNOiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439587047 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/imgInit.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/initRandSeed.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/loadDetPixMaskForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/loadNoiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439748177 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/loadProjection.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/loadReconFile.c
+	"headFile.h"
+
+1439587047 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/loadSRF.c
+	"headFile.h"
+
+1439580129 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/main.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/poidev.c
+	<math.h>
+
+1442214759 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/projGeneration.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/projInit.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/ran1.c
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/Recon_Cal.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439749678 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/reconUpdate.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/resetImag.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/resetSeq.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/senInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/seqInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/souMaskInit.c
+	"headFile.h"
+
+1439587047 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/srfread1.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/subProjInit.c
+	"headFile.h"
+
+1439746704 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/subSeqInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/threadHandle.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/0812_2015Code/reconstruction_v1/TranA_multiply_x.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/A_multiply_x.c
+	"headFile.h"
+
+1439438842 /media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/headFile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<math.h>
+	<unistd.h>
+	<time.h>
+	"./system.h"
+	"./lib/cblas.h"
+
+1439438842 /media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/system.h
+
+1439438842 /media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/lib/cblas.h
+	<stddef.h>
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/addPulse2Proj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 /media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/globalVariable.h
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/checkFile.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/gammln.c
+	<math.h>
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/genNOiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439587047 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/imgInit.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/initRandSeed.c
+	"headFile.h"
+
+1487621352 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/loadDetPixMaskForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/loadNoiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439748177 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/loadProjection.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/loadReconFile.c
+	"headFile.h"
+
+1439587047 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/loadSRF.c
+	"headFile.h"
+
+1439580129 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/main.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/poidev.c
+	<math.h>
+
+1487627938 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/projGeneration.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/projInit.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/ran1.c
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/Recon_Cal.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439749678 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/reconUpdate.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/resetImag.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/resetSeq.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/senInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/seqInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/souMaskInit.c
+	"headFile.h"
+
+1439587047 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/srfread1.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/subProjInit.c
+	"headFile.h"
+
+1439746704 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/subSeqInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/threadHandle.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/A/Elena/compound_eye/MRC_SPECT-II/reconstruction_v1/TranA_multiply_x.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/A_multiply_x.c
+	"headFile.h"
+
+1439438842 /media/D/Elena/codes/MRCSPECT2/reconstruction_v1/headFile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<math.h>
+	<unistd.h>
+	<time.h>
+	"./system.h"
+	"./lib/cblas.h"
+
+1439438842 /media/D/Elena/codes/MRCSPECT2/reconstruction_v1/system.h
+
+1439438842 /media/D/Elena/codes/MRCSPECT2/reconstruction_v1/lib/cblas.h
+	<stddef.h>
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/addPulse2Proj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 /media/D/Elena/codes/MRCSPECT2/reconstruction_v1/globalVariable.h
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/checkFile.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/gammln.c
+	<math.h>
+
+1490048572 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/genNOiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439587047 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/imgInit.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/initRandSeed.c
+	"headFile.h"
+
+1487621352 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/loadDetPixMaskForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/loadNoiseProj.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439748177 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/loadProjection.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/loadReconFile.c
+	"headFile.h"
+
+1439587047 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/loadSRF.c
+	"headFile.h"
+
+1492644971 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/main.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/poidev.c
+	<math.h>
+
+1489017147 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/projGeneration.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/projInit.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/ran1.c
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/Recon_Cal.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439749678 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/reconUpdate.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/resetImag.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/resetSeq.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/senInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/seqInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/souMaskInit.c
+	"headFile.h"
+
+1439587047 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/srfread1.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/subProjInit.c
+	"headFile.h"
+
+1439746704 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/subSeqInit_ForRecon.c
+	"headFile.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/threadHandle.c
+	"headFile.h"
+	"globalVariable.h"
+
+1439438842 source:/media/D/Elena/codes/MRCSPECT2/reconstruction_v1/TranA_multiply_x.c
+	"headFile.h"
+

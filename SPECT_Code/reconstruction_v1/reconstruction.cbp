@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="reconstruction" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/reconstruction" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-pthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/reconstruction" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="A_multiply_x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Recon_Cal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="TranA_multiply_x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="addPulse2Proj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="checkFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gammln.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="genNOiseProj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="globalVariable.h" />
+		<Unit filename="headFile.h" />
+		<Unit filename="imgInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="initRandSeed.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib/cblas.h" />
+		<Unit filename="loadDetPixMaskForRecon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadNoiseProj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadProjection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadReconFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadSRF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="poidev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="projGeneration.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="projInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ran1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="reconUpdate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="resetImag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="resetSeq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="senInit_ForRecon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="seqInit_ForRecon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="souMaskInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="srfread1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subProjInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subSeqInit_ForRecon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="system.h" />
+		<Unit filename="threadHandle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

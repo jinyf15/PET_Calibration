@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="srfs" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/srfs" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-pthread" />
+					<Add directory="nr" />
+				</Compiler>
+				<Linker>
+					<Add option="-pthread" />
+					<Add option="-lgfortran" />
+					<Add library="lib/cblas_LINUX.a" />
+					<Add library="lib/libblas.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/srfs" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-pthread" />
+					<Add option="-lgfortran" />
+					<Add library="lib/cblas_LINUX.a" />
+					<Add library="lib/libblas.a" />
+				</Linker>
+			</Target>
+			<Target title="test">
+				<Option output="bin/test/srfs" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/test/" />
+				<Option object_output="obj/test/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="calDetGlobalPos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="calSouGlobalPos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="calculateMap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="checkFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="detInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gensubSRF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="globalVariable.h" />
+		<Unit filename="headFile.h" />
+		<Unit filename="loadDetFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadDetPixMask.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadDetPixlPos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadDetPosiFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadPhAxis.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadPhFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadPhPosi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loadPhProfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="penetration_map_compound_eye.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="phGlobalPosi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="phInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pixelprob_det2ML_sum_ph_insert2_double10.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pixelprob_det2ML_sum_ph_insert2_double11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="saveSRF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="senInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="seqInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="souInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="souMaskInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="srfsForThread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subCalculateMap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subDetInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subPhInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subSeqInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subSouInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sysSRFInit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="system.h" />
+		<Unit filename="tranSRF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
