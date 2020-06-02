@@ -52,7 +52,7 @@ syspara.SDX=R0/20;syspara.SDY=R0/20;syspara.SDZ=R0/20;
 syspara.NSX=40; syspara.NSY=40; syspara.NSZ=40;
 syspara.mdata{:} = total_data{:}(:,1:4:end);
 myplot = @(x,optimValues,state)plotGeometry(x,optimValues,state,fullX,fitIndex,syspara);     
-options=optimset('LargeScale','on','TolFun',1e-10,'TolX',1e-10,'MaxIter',100,'MaxFunEvals',length(fitX)*2000,'Display','iter','Algorithm','sqp','PlotFcns',{@optimplotx,...
+options=optimset('LargeScale','on','TolFun',1e-5,'TolX',1e-10,'MaxIter',100,'MaxFunEvals',length(fitX)*2000,'Display','iter','Algorithm','sqp','PlotFcns',{@optimplotx,...
 @optimplotfval,myplot});
 [x,fval,exitflag,output]=fmincon(@(x)forward_proj_PET_multiang_new_v2(x, syspara, fitIndex ,fullX), fitX, [], [], [], [],lb, ub, nonlcon,options);
 fitX=x;
@@ -84,7 +84,7 @@ for it=1:subset
         myplot = @(x,optimValues,state)plotGeometry(x,optimValues,state,fullX,fitIndex,syspara);
         %tolerance = tolerance*sqrt(0.1)
         %% using standard fmincon
-        options=optimset('LargeScale','on','TolFun',1e-10,'TolX',tolerance,'MaxIter',100,'MaxFunEvals',length(fitX)*2000,'Display','iter','Algorithm','sqp','PlotFcns',{@optimplotx,...
+        options=optimset('LargeScale','on','TolFun',1e-5,'TolX',tolerance,'MaxIter',100,'MaxFunEvals',length(fitX)*2000,'Display','iter','Algorithm','sqp','PlotFcns',{@optimplotx,...
 @optimplotfval,myplot});
         [x,fval,exitflag,output]=fmincon(@(x)forward_proj_PET_multiang_new_v2(x, syspara, fitIndex ,fullX), fitX, [], [], [], [],lb, ub, nonlcon,options);   
         fitX=x;
