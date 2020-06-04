@@ -84,7 +84,7 @@ for na=0:syspara.NANG-1
     index = 1;
     while index <= l
         data=total_data{na+1}(:,index);
-        logpr = forward_proj_multi_angle_prob(data, size(data,2), size(sp,1), dp, dpc, sp(:,1),sp(:,2),sp(:,3),...
+        logpr = forward_proj_multi_angle_prob_MT(data, size(data,2), size(sp,1), dp, dpc, sp(:,1),sp(:,2),sp(:,3),...
             Mtr_PET, pt, reqpara, syspara.fn, spc);
         if logpr == -100 % chance coincidence
             total_data{na+1}(:,index) = [];

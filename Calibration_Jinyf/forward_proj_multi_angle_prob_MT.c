@@ -145,7 +145,7 @@ double forward_proj_pet_parallel(double dx1, double dy1, double dz1, double dx2,
       cosTheta1=hs1/sqrt(dsq1);
       cosTheta2=abs_t(det2Z[0]*difx+det2Z[1]*dify+det2Z[2]*difz)/sqrt(dsq1);
 
-      p1=s1*0.07957747154594766788444188168626/dsq1*cosTheta1*1000;
+      p1=s1*0.07957747154594766788444188168626/dsq1*cosTheta1;
       ltmp=mu_det1*DDZ_DET1/cosTheta1;
       w1=(1-exp(0-ltmp))*exp((0-layer1)*ltmp);
       p1=p1*w1;
@@ -193,7 +193,7 @@ double forward_proj_pet_parallel(double dx1, double dy1, double dz1, double dx2,
           //mexPrintf("abs: %f",abs_t(pt3[0]-pt1[0]));
           nn=check_if_inside_quadrange(pt1,pt2,pt3,pt4,pt,fn);
 
-          p2=nn*s2*100/fn/fn/A2;
+          p2=nn*s2/fn/fn/A2;
 
           if(p2>1) p2=1.0;
 
