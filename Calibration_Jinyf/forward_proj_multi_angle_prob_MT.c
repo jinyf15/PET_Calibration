@@ -268,9 +268,17 @@ void *forward_proj_multi_angle_prob(void *arg)
         flag = 0;
         for(j = 0;j < 4;j++)
             if ((int)mdata[4*i+j])
-                flag = flag + (1<<j);
-        PET1 = (flag-(flag&(flag-1)))/2;
-        PET2 = ((flag - (1<<PET1))>>2) + 1;
+            	if (!flag)
+		{
+			PET1 = j;
+			flag = 1;
+		}
+		else
+		{
+			PET2 = j;
+			break;
+		}
+
         //mexPrintf("PET1=%d PET2=%d\n",PET1,PET2);
         dn1=(int)mdata[4*i+PET1];
         dn2=(int)mdata[4*i+PET2];
@@ -290,10 +298,10 @@ void *forward_proj_multi_angle_prob(void *arg)
         }
         for(j = 0;j < 3;j++)
         {
-            det1Z[j] = Mtr[PET1*9+6+j];
-            det2X[j] = Mtr[PET2*9+j];
-            det2Y[j] = Mtr[PET2*9+3+j];
-            det2Z[j] = Mtr[PET2*9+6+j];
+            det1Z[j] = Mtr[(PET1*3+dn1/(NDET_DET[PET1]*DM_DET[PET1]/4))*9+6+j];
+            det2X[j] = Mtr[(PET2*3+dn2/(NDET_DET[PET2]*DM_DET[PET2]/4))*9+j];
+            det2Y[j] = Mtr[(PET2*3+dn2/(NDET_DET[PET2]*DM_DET[PET2]/4))*9+3+j];
+            det2Z[j] = Mtr[(PET2*3+dn2/(NDET_DET[PET2]*DM_DET[PET2]/4))*9+6+j];
         }
 
         //mexPrintf("PET1=%d PET2=%d\n",PET1,PET2);

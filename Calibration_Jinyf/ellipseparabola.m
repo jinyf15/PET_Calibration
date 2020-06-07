@@ -43,7 +43,7 @@ c(6) = sqrt((NewC-PET_c(:,3))'*(NewC-PET_c(:,3))) - 2;
 t = (NormalVector(:,4)'*PET_c(:,4)-NormalVector(:,4)'*PET_c(:,3))/(NormalVector(:,4)'*NormalVector(:,4));
 NewC = PET_c(:,3) + NormalVector(:,4)*t;
 c(7) = sqrt((NewC-PET_c(:,4))'*(NewC-PET_c(:,4))) - 2;
- c = c*1e5;
+ c = c*1e9;
 ceq = [];
 
 end

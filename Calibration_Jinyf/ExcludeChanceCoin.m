@@ -35,8 +35,7 @@ for i = 1:4
     for j = 1:4
         dp(1,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i) = repmat(syspara.dxx0(:,i),syspara.DM_DET(i),1)';
         dp(2,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i) = repmat(syspara.dyy0(:,i),syspara.DM_DET(i),1)';
-        dp(3,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i) = reshape(repmat(syspara.DDZ_DET(i)*(0.5:syspara.DM_DET(i)-0.5),syspara.NDET_DET(i)/4,1),1,TotalP(i)/4);
-        dp(:,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i) = Mtr_det(:,:,j+(i-1)*4)*dp(:,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i)+det_c(:,j+(i-1)*4);
+        dp(3,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i) = reshape(repmat(syspara.DDZ_DET(i)*(0.5:syspara.DM_DET(i)-0.5),syspara.NDET_DET(i)/4,1),1,TotalP(i)/4);       
         if i < 4
             dpc(1,1+TotalP(i)*(j-1):4:TotalP(i)*j,i)=dp(1,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i)-syspara.DDX_DET(i)/2;
             dpc(1,2+TotalP(i)*(j-1):4:TotalP(i)*j,i)=dp(1,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i)+syspara.DDX_DET(i)/2;
@@ -48,12 +47,17 @@ for i = 1:4
             dpc(2,4+TotalP(i)*(j-1):4:TotalP(i)*j,i)=dp(2,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i)+syspara.DDY_DET(i)/2;
             dpc(3,1+TotalP(i)*(j-1):TotalP(i)*j,i)=reshape(repmat(dp(3,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i),4,1),TotalP(i),1);
             % rotate and shift
-            dpc(:,1+TotalP(i)*(j-1):TotalP(i)*j,i) = Mtr_PET(:,:,i)*dpc(:,1+TotalP(i)*(j-1):TotalP(i)*j,i)+PET_c(:,i);
+            dpc(:,1+TotalP(i)*(j-1):TotalP(i)*j,i) = Mtr_PET(:,:,i)*(Mtr_det(:,:,j+(i-1)*4)*dpc(:,1+TotalP(i)*(j-1):TotalP(i)*j,i)+det_c(:,j+(i-1)*4))+PET_c(:,i);
         end
+        dp(:,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i) = Mtr_PET(:,:,i)*(Mtr_det(:,:,j+(i-1)*4)*dp(:,1+TotalP(i)/4*(j-1):TotalP(i)/4*j,i)+det_c(:,j+(i-1)*4))+PET_c(:,i);
     end
-    dp(:,1:TotalP(i),i) = Mtr_PET(:,:,i)*dp(:,1:TotalP(i),i)+PET_c(:,i);
 end
-
+%cputime % end time
+for i = 1:4
+    for j = 1:4
+        Mtr_det(:,:,j+(i-1)*4) = Mtr_PET(:,:,i) * Mtr_det(:,:,j+(i-1)*4);
+    end
+end
 pt=zeros(2,syspara.fn*syspara.fn,4);
 pt(1,:,:) = repmat(repmat(-(syspara.fn-1)/2:(syspara.fn-1)/2,1,syspara.fn)',1,4);
 pt(2,:,:) = repmat(reshape(repmat(-(syspara.fn-1)/2:(syspara.fn-1)/2,syspara.fn,1),1,syspara.fn*syspara.fn),4,1)';
@@ -85,7 +89,7 @@ for na=0:syspara.NANG-1
     while index <= l
         data=total_data{na+1}(:,index);
         logpr = forward_proj_multi_angle_prob_MT(data, size(data,2), size(sp,1), dp, dpc, sp(:,1),sp(:,2),sp(:,3),...
-            Mtr_PET, pt, reqpara, syspara.fn, spc);
+            Mtr_det, pt, reqpara, syspara.fn, spc);
         if logpr == -100 % chance coincidence
             total_data{na+1}(:,index) = [];
             index = index-1;
