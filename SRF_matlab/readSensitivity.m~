@@ -1,0 +1,28 @@
+filename = '../data/srf/sen_sub';
+nthread = 4;
+SX = 128;
+SY = 128;
+SZ = 128;
+sen = zeros(1,SX*SY*SZ);
+for i = 1:nthread
+    fid = fopen([filename,num2str(i-1)],'rb');
+    sen(1,i:nthread:128*128*2) = fread(fid,128*64,'double');
+    fclose(fid);
+end
+sen = reshape(sen,SX,SY,SZ);
+
+senXY = sen(:,:,2);
+figure,
+imagesc(senXY);axis equal; colorbar;
+senXZ = squeeze(sen(:,SY/2,:));
+figure,axis equal; colorbar;
+imagesc(senXZ);axis equal; colorbar;
+senYZ = squeeze(sen(SZ/2,:,:));
+figure,axis equal; colorbar;
+imagesc(senYZ);axis equal; colorbar;
+
+filename = '../data/source';
+fid = fopen(filename,'rb');
+source = fread(fid, 'double');
+source = reshape(source,128,128,128);
+plot3(source(:,))
